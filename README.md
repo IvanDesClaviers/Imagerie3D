@@ -14,8 +14,6 @@ a Galvos and a rangefinder (laser).
 
 - __A calibration correction tool:__ its purpose is to help calibrate the galvos by achieving a precision of 0.2 mm on
   the grid
-  (necessary for type 1 repeatability, explained
-  here: https://mechasys.atlassian.net/wiki/spaces/0E/pages/1300267013/TM061+-+Achieve+type+1+repeatability+3mm)
 
 ## Project Setup ##
 
@@ -41,7 +39,6 @@ and the Galvos
 NOTE: Since we need the controller module, using the corrector need superuser privileges.
 
 The computer you are using to run the command must be connected to 4 Ids Cameras with a specific setup detailed here:
-TODO: Link to TM about camera calibration setup.
 
 Launch the Galvos calibration software until you are projecting your first point on the grid.
 
