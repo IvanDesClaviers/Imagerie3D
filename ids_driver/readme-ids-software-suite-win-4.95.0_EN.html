@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IDS Software Suite 4.95.0 for Windows</title>
+<meta name="keywords" content="IDS Software Suite, ReadMe, Windows" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="author" content="IDS Imaging Development Systems GmbH" />
+<meta name="description" content="ReadMe for IDS Software Suite 4.95.0 for Windows" />
+<style type="text/css">
+	@media screen {
+   	html { font-family: Source Sans Pro, Arial, Helvetica, Sans-Serif; font-size: 0.9em; margin: 0px 10px 0px 10px; }
+	body { margin: 0px; padding: 5px; background: #FFFFFF; }
+	h1 { color: #FFFFFF; background-color: #008A96; padding: 5px; font-size: 1.5em; }
+	h2 { color: #FFFFFF; background-color: #909090; padding: 5px; font-size: 1.3em; }
+	h3 { font-size: 1.1em; padding: 5px; }
+	h4 { font-size: 1.0em; padding: 5px; }
+	table, th, td { border: solid 1px #000000; border-collapse: collapse; padding: 3px; }
+	p { margin: 5px;padding-top: 6px; padding-bottom: 6px;}
+	code { font-size: 1.3em; }
+	a { color: #008a96; }
+	}
+
+	@media print {
+	html { font-family: Source Sans Pro, Arial, Helvetica, Sans-Serif; font-size: 0.9em; }
+	h1 { color: #000000; background-color: #FFFFFF; padding: 3px; font-size: 1.5em; page-break-after: avoid; }
+	h2 { color: #000000; background-color: #FFFFFF; padding: 3px; font-size: 1.3em; page-break-after: avoid; }
+	h3 { page-break-after: avoid; }
+	h4 { page-break-after: avoid; }
+	table, th, td { border: solid 1px #000000; border-collapse: collapse; padding: 1px; }
+	.content { display: none; }
+	}
+</style>
+</head>
+<body>
+<h1 id="top">IDS Software Suite 4.95.0 for Windows</h1>
+<div class="content">
+	<h2 id="toc">Contents</h2>
+	<ul>
+		<li><a href="#system-requirements">System requirements</a></li>
+		<li><a href="#configuration">Configuration notes</a></li>
+		<li><a href="#older-models">Notes on older camera models</a></li>
+		<li><a href="#installation">Installation</a></li>
+		<li><a href="#first-start">First start</a></li>
+		<li><a href="#dependencies">List of contained files / dependencies</a></li>
+		<li><a href="#uninstallation">Uninstallation</a></li>
+		<li><a href="#known-issues">Known issues</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</div>
+<h2 id="system-requirements">System requirements&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p>For operating the uEye cameras, the following system requirements must be met:</p>
+<table>
+	<thead>
+		<tr>
+			<th>&nbsp;</th>
+			<th>USB 3.1/USB 3.0 camera</th>
+			<th>USB 2.0 camera</th>
+			<th>GigE camera</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Interface</td>
+			<td>USB 3.0 port (Super Speed)</td>
+			<td>USB 2.0 port (High Speed 480 Mbps, "Full Powered" 500 mA)</td>
+			<td>Gigabit Ethernet port (1000 Mbps)</td>
+		</tr>
+		<tr>
+			<td>CPU</td>
+			<td>Intel i5 or better</td>
+			<td>Intel i3 or better</td>
+			<td>Intel i3 or better</td>
+		</tr>
+		<tr>
+			<td>Memory</td>
+			<td>min. 2 GB</td>
+			<td>min. 2 GB</td>
+			<td>min. 2 GB</td>
+		</tr>
+		<tr>
+			<td>Disk space</td>
+			<td>min. 500 MB</td>
+			<td>min. 500 MB</td>
+			<td>min. 500 MB</td>
+		</tr>
+		<tr>
+			<td>Operating system</td>
+			<td>
+				<ul style="padding-left:1em;margin-top:0;margin-bottom:0;">
+					<li>Windows 10 (32/64-bit)</li>
+					<li>Windows 8.1/8 (32/64-bit)</li>
+					<li>Windows 7 Service Pack 1 (32/64-bit) with SHA-2 code signing support (KB3033929)</li>
+				</ul>
+			</td>
+			<td>
+				<ul style="padding-left:1em;margin-top:0;margin-bottom:0;">
+					<li>Windows 10 (32/64-bit)</li>
+					<li>Windows 8.1/8 (32/64-bit)</li>
+					<li>Windows 7 Service Pack 1 (32/64-bit) with SHA-2 code signing support (KB3033929)</li>
+				</ul>
+			</td>
+			<td>
+				<ul style="padding-left:1em;margin-top:0;margin-bottom:0;">
+					<li>Windows 10 (32/64-bit)</li>
+					<li>Windows 8.1/8 (32/64-bit)</li>
+					<li>Windows 7 Service Pack 1 (32/64-bit) with SHA-2 code signing support (KB3033929)</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>Depending on the sensor model, the camera performance may be limited with the minimum system requirements.</p>
+<h3>Note on Windows 10</h3>
+<p>IDS Software Suite has been tested with the following Windows 10 version:</p>
+<ul>
+	<li>Edition: Windows 10 Pro
+		<ul>
+			<li>Version: 20H2</li>
+			<li>Version: 1909</li>
+		</ul>
+	</li>
+</ul>
+<h2 id="configuration">Configuration notes&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<h3>USB interface</h3>
+<p>For best performance and stability, all USB drivers and the firmware must be updated to the latest version!</p>
+<p>Current generation CPUs with energy saving technologies can cause bandwidth problems on the USB bus.</p>
+<h3>DHCP configuration of the network adapter</h3>
+<p>We recommend not to change the DHCP configuration of the network adapter while operating the uEye cameras. If you encounter difficulties, you should reboot your computer system with the desired configuration.</p>
+<h3>Graphics functions</h3>
+<h4>Direct3D graphics functions</h4>
+<p>The uEye driver can use Direct3D to display the camera image with overlay information. To use the Direct3D functions, a suitable version of Microsoft DirectX runtime has to be installed on the system.</p>
+<p>On Windows systems, you can use the supplied "DXDiag" diagnostic tool to check whether your graphics card supports Direct3D functions. To start the diagnostic tool, click "Run…" on the Windows start menu (shortcut: Windows+R) and enter "DXDiag" in the input box.</p>
+<p style="border-top: 1px solid #008A96;border-bottom: 1px solid #008A96;padding: 5px;margin:20px 0px 20px 0px;"><strong>Note for 64-bit systems:</strong> On a 64-bit operating system, the setup installs only 64-bit DirectX libraries. If you are using a 32-bit application and do not have 32-bit DirectX libraries installed, using DirectX will fail. In this case, the 32-bit DirectX libraries must be installed manually.</p>
+<h4>OpenGL graphics functions</h4>
+<p>For OpenGL, version 1.4 or higher must be installed.</p>
+<h3>COM port driver</h3>
+<p>The COM port driver is only supported on Windows 7.</p>
+<h2 id="older-models">Notes on older camera models&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p>Older versions of the IDS Software Suite can be downloaded in the software archive on <a href="https://en.ids-imaging.com/downloads.html" target="_blank">https://en.ids-imaging.com/downloads.html</a>.</p>
+<h3>UI-3013XC</h3>
+<p>The UI-3013XC camera model is supported by driver version 4.92 for the last time.</p>
+<h3>UI-112xSE, UI-512xSE, and XS</h3>
+<p>The camera models UI-112xSE, UI-512xSE, and XS are supported by driver version 4.91 for the last time.</p>
+<h3>UI-1008XS</h3>
+<p>The UI-1008XS camera model is supported by driver version 4.81 for the last time.</p>
+<h3>GigE uEye RE</h3>
+<p>The GigE uEye RE camera family is supported by driver version 4.80 for the last time. The GigE uEye RE PoE camera familiy is not affected by this.</p>
+<h3>USB 2 uEye RE</h3>
+<p>The USB uEye RE camera family is supported by driver version 4.80 for the last time.</p>
+<h3>USB 2 uEye ME</h3>
+<p>The USB uEye ME camera family is supported by driver version 4.40 for the last time.</p>
+<h3>GigE uEye HE</h3>
+<p>The GigE uEye HE camera family is supported by driver version 3.82 for the last time.</p>
+<h3>USB uEye SE</h3>
+<p>The models UI-121xSE, UI-141xSE, UI-144xSE, UI-145xSE, and UI-154xSE-C have been discontinued and will not be tested with new drivers from version 3.80 onwards. IDS Imaging Development Systems GmbH therefore cannot guarantee that these models will provide full functionality with new driver versions and operate without problems.</p>
+<h3>uEye memory board USB uEye SE/USB uEye RE</h3>
+<p>The optional memory board of the USB uEye SE and USB uEye RE camera series has been discontinued. The functions required to operate the memory board are supported up to and including driver version 3.24.</p>
+<h3>Older USB 2 uEye CMOS cameras</h3>
+<p> All USB CMOS-cameras with USB board revision &lt; 2.1 are not supported by driver versions &gt; 3.10. How can you check whether your camera is affected?</p>
+<p>Check the serial number of your camera. If it is less than 400 26 27000, your camera will not be compatible with driver versions &gt; 3.10.</p>
+<p>If your camera is not compatible with driver versions &gt; 3.10, you can of course continue to use your present driver (up to version 2.40).</p>
+<h2 id="installation">Installation&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p style="border-top: 1px solid #008A96;border-bottom: 1px solid #008A96;padding: 5px;margin:20px 0px 20px 0px;"><strong>NOTICE!</strong> Prior to installing IDS Software Suite 4.95, previous versions of IDS Software Suite must be uninstalled!</p>
+<p><strong>You need administrator privileges to install the software.</strong></p>
+<ul>
+	<li>GigE uEye network service
+	<br />Once the software has been installed, the GigE uEye network service is automatically bound to all local network adapters.
+	<br />We recommend disabling the network service for all network adapters that will not be used with GigE uEye cameras. The network service can be disabled via the IDS Camera Manager.</li>
+	<li>Routing table under Windows
+	<br />When the uEye services for a network card are disabled/enabled or deinstalled/installed, the entries in the routing table are deleted, which are assigned to the corresponding network card.</li>
+	<li>Microsoft Visual C++ 2015-2019 Redisttributable
+	<br />Applications with graphical user interface like IDS Camera Manager additionally require "Microsoft Visual C++ 2015-2019 Redisttributable". If you use the installation program, the redistributable package prompts for installation (if it is not already installed). When installing via the command line in silent mode, you must install the package yourself.</li>
+</ul>
+<h3>Setup via installation program</h3>
+<ol>
+	<li>Extract the archive.</li>
+	<li>Double-click on the extracted file to start the installation. The installation is menu-driven. For installation, the following options are available:
+		<ul>
+			<li>Recommended
+			<br />Installs recommended drivers, developments files, 3rd party interfaces, and documentation.</li>
+			<li>Developer
+			<br />Installs all drivers and services as well as development files and sample source code. Also the uEye .NET and uEye DirectShow programming interfaces are installed.</li>
+			<li>Full
+			<br />Installs all components.</li>
+			<li>Minimum
+			<br />Installs only drivers for USB and GigE cameras and the IDS Camera Manager but no 3rd party interfaces nor documentation.</li>
+			<li>Custom
+			<br />When you choose custom installation, you have to individually select the components you want to install. Custom installation is recommended only for advanced users.
+			</li>
+		</ul>
+	</li>
+</ol>
+<p>If you need to make changes to an existing installation, you can do this via the installation program with the "Modify program" option.</p>
+<h3>Setup via command line</h3>
+<p>You can start the setup from the command line to run the installation without the graphical user interface. The setup runs in the background when a command line is used, i.e. the command line returns immediately after a call, while the setup runs in the background. This behavior is different from the previous uEye batch installer.</p>
+<p>If you want to get error codes during installation, you have to run the setup blocking with the Microsoft tool "start /wait setup.exe..." (see examples below).</p>
+<table>
+	<tr style="background-color:#dedede">
+		<td><strong>Parameter</strong></td>
+		<td><strong>Description</strong></td>
+	</tr>
+	<tr>
+		<td>/S</td>
+		<td>Silent installation</td>
+	</tr>
+	<tr>
+		<td>/D</td>
+		<td>Sets installation folder:
+			<ul>
+				<li>Note that "/D" has to be at the end of the setup call (see example below).</li>
+				<li>Do not use spaces between "/D=" and the path.</li>
+				<li>Escape the path with quotation marks if it contains spaces.</li>
+				<li>Possible separators are back slash \ or slash /</li>
+			</ul>    
+    	</td>
+	</tr>
+	<tr>
+		<td>/repair</td>
+		<td>Repairs a previous installation.</td>
+	</tr>
+	<tr>
+		<td>/remove</td>
+		<td>Removes a previous installation.</td>
+	</tr>
+	<tr>
+		<td>/insttype</td>
+		<td>Recommended | Full | Developer | Minimal
+		<br />For further description see above.</td>
+	</tr>
+	<tr>
+		<td>/usb</td>
+		<td>Device drivers for USB cameras</td>
+	</tr>
+	<tr>
+		<td>/eth</td>
+		<td>Device drivers for GigE cameras</td>
+	</tr>
+	<tr>
+		<td>/comport</td>
+		<td>Virtual COM port driver</td>
+	</tr>
+	<tr>
+		<td>/dshow_service</td>
+		<td>DirectShow service</td>
+	</tr>
+	<tr>
+		<td>/manager</td>
+		<td>IDS Camera Manager, e.g. for configuring the IP address of a GigE uEye camera.</td>
+	</tr>
+	<tr>
+		<td>/cockpit</td>
+		<td>uEye Cockpit</td>
+	</tr>
+	<tr>
+		<td>/demo</td>
+		<td>uEye Demo</td>
+	</tr>
+	<tr>
+		<td>/hotpixeleditor</td>
+		<td>uEye Hotpixel Editor</td>
+	</tr>
+	<tr>
+		<td>/sequencer</td>
+		<td>uEye Sequencer</td>
+	</tr>
+	<tr>
+		<td>/devfiles</td>
+		<td>Development files</td>
+	</tr>
+	<tr>
+		<td>/samplebinaries</td>
+		<td>Sample applications</td>
+	</tr>
+	<tr>
+		<td>/samplesources</td>
+		<td>Source code of sample applications</td>
+	</tr>
+	<tr>
+		<td>/documentation</td>
+		<td>Manual for IDS Software Suite</td>
+	</tr>
+	<tr>
+		<td>/documentation_dshow</td>
+		<td>Manual for uEye DirectShow interface</td>
+	</tr>
+	<tr>
+		<td>/documentation_labview</td>
+		<td>Manual for uEye .NET LabVIEW</td>
+	</tr>
+	<tr>
+		<td>/documentation_net</td>
+		<td>Manual for uEye .NET interface</td>
+	</tr>
+	<tr>
+		<td>/documentation_samples</td>
+		<td>Manual for sample programs</td>
+	</tr>
+	<tr>
+		<td>/documentation_visionpro</td>
+		<td>Manual for uEye VisionPro</td>
+	</tr>
+	<tr>
+		<td>/cognex</td>
+		<td>Driver for Cognex</td>
+	</tr>
+	<tr>
+		<td>/dshow</td>
+		<td>Driver for DirectShow</td>
+	</tr>
+	<tr>
+		<td>/labview</td>
+		<td>Driver for LabVIEW</td>
+	</tr>
+	<tr>
+		<td>/net</td>
+		<td>Driver for uEye .NET</td>
+	</tr>
+	
+	<tr>
+		<td>/neurocheck</td>
+		<td>Driver for NeuroCheck</td>
+	</tr>
+	<tr>
+		<td>/halcon</td>
+		<td>Driver for HALCON</td>
+	</tr>
+	<tr>
+		<td>/?</td>
+		<td>Help description</td>
+	</tr>
+</table>
+<p style="border-top: 1px solid #008A96;border-bottom: 1px solid #008A96;padding: 5px;margin:20px 0px 20px 0px;"><strong>NOTICE!</strong> If you call the setup a second time with other components, the setup is changed and the components that are no longer specified are uninstalled.</p>
+<p>Possible error codes are listed below.</p>
+<table>
+	<tr style="background-color:#dedede">
+		<td><strong>Error code</strong></td>
+		<td><strong>Description</strong></td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>Success, no error</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Nothing to uninstall, no installed version could be detected.</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Setup was cancelled in the graphical interface.</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>No installation found to update.</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Update not supported.</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Setup was cancelled in the graphical interface.</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>An application is running that prevents the installation.</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Not installed e. g. there is a previous version still installed.</td>
+	</tr>
+</table>
+<h4>Examples for silent setup</h4>
+<ul>
+	<li>Non-blocking call and background execution
+	<br /><code>uEye_&lt;version&gt;_Full_&lt;build&gt;.exe /S /usb /cockpit /manager</code></li>
+	<li>Blocking call and control of error codes
+	<br /><code>START /WAIT uEye_&lt;version&gt;_Full_&lt;build&gt;.exe /S /usb /cockpit /manager & echo %errorLevel%</code></li>
+	<li>Querying the help description
+	<br /><code>uEye_&lt;version&gt;_Full_&lt;build&gt;.exe /?</code></li>
+	<li>Installation with install type "Recommended"
+	<br /><code>uEye_&lt;version&gt;_Full_&lt;build&gt;.exe /S /insttype=Recommended</code></li>
+	<li>Installation with changed installation directory
+	<br /><code>uEye_&lt;version&gt;_Full_&lt;build&gt;.exe /S /insttype=Recommended /D="c:/dev/your folder"</code></li>
+</ul>
+<h3>Installation paths</h3>
+<table>
+	<tr style="background-color:#dedede">
+		<td><strong>Folder</strong></td>
+		<td><strong>Description</strong></td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/com</td>
+		<td>Driver files</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/develop</td>
+		<td>Development files (DLL, header, libraries), sample binaries and source codes</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/eth</td>
+		<td>Driver and firmware files for GigE cameras</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/help</td>
+		<td>Installed help manuals</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/interfaces</td>
+		<td>Installed files for 3rd party interfaces</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/legal</td>
+		<td>Legal notes on used open source code</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/program</td>
+		<td>Applications like IDS Camera Manager, uEye Cockpit etc.</td>
+	</tr>
+	<tr>
+		<td>&lt;Installation directory&gt;/usb</td>
+		<td>Driver and firmware files for USB cameras</td>
+	</tr>
+</table>
+<h2 id="first-start">First start&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<h3>USB 3.1/USB 3/USB 2 uEye camera</h3>
+<p>After you installed the software, connect the camera to the PC, using the corresponding USB cable. The camera will be recognized automatically. When you connect a camera with a PC or a new USB port for the first time, it is detected as a new device and the firmware is uploaded to the camera. When the camera has been correctly installed, the LED on the back of the camera lights up green and the camera is displayed in the list of the IDS Camera Manager.</p>
+<p>Note: When you connect a new USB device with a PC or a new USB port for the first time, <strong>Windows update</strong> searches automatically online for a suitable driver. This may take some time depending on your system.</p>
+<h4>USB 3/USB 3.1 uEye cameras under USB 2.0</h4>
+<p>USB 3/USB 3.1 uEye cameras are limited usable under USB 2.0. Depending on the camera model, not all camera functions are available in USB 2.0 mode. USB 3/USB 3.1 uEye cameras are optimized for USB 3.0 ports and are not tested by IDS Imaging Development Systems GmbH under USB 2.0.</p>
+<p>Note that due to the high performance of modern sensors, some USB 3/USB 3.1 uEye models are not supported in USB 2.0 mode anymore, as the USB 2.0 interface does not provide enough power.</p>
+<h3>GigE uEye camera</h3>
+<p>After you installed the software, connect the camera with the network. Check the power supply to the camera. Use either an external power supply or - depending on the model - via PoE (Power over Ethernet).</p>
+<p style="border-top: 1px solid #008A96;border-bottom: 1px solid #008A96;padding: 5px;margin:20px 0px 20px 0px;"><strong>NOTICE!</strong> Cameras with Power-over-Ethernet (PoE) can be powered from an external source or via PoE. The camera should not be supplied with both power sources at the same time, as this may cause irreparable damage to the camera.</p>
+<p>Before you can use the camera on the network, you need to assign a valid IP address to the camera in the IDS Camera Manager.</p>
+<h2 id="dependencies">List of contained files / dependencies&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p>See list on <a href="https://en.ids-imaging.com/open-source.html" target="_blank">https://en.ids-imaging.com/open-source.html</a></p>
+<h2 id="uninstallation">Uninstallation&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p>To uninstall the uEye drivers and software, you also use the menu-driven uEye setup program. The GigE uEye network service is uninstalled automatically when you uninstall the uEye driver. After uninstalling the GigE uEye driver, you will have to restart your computer. You can only reinstall the driver after restarting the computer.</p>
+<h2 id="known-issues">Known issues&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p>This section lists known issues that might occur in this release.</p>
+<table>
+	<tr>
+		<td>Windows 7: UAC states "Unknown publisher"</td>
+		<td>The UAC (user account control) states that the publisher of the setup is unknown.
+		<br />This is due to the fact that the IDS certificates have changed. This problem only occurs on Windows versions that do not get any updates from Microsoft and therefore do not get the new Certificate Authorities (CAs).
+		<br>To solve the problem, you can install the certificates manually from <a href="https://www.digicert.com/kb/digicert-root-certificates.htm#roots">https://www.digicert.com/kb/digicert-root-certificates.htm#roots</a>
+		<ul>
+			<li>DigiCert Trusted Root G4</li>
+			<li>DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1</li>
+		</ul>
+		</td>
+	</tr>	
+</table>
+<h2 id="contact">Contact&nbsp;&nbsp;&nbsp;<a href="#top" style="color: #FFFFFF;">&uArr;</a></h2>
+<p>IDS Imaging Development Systems GmbH<br />
+Dimbacher Str. 10<br />
+D-74182 Obersulm/Germany</p>
+<p>T: +49 7134 96196-0<br />
+E: <a href="mailto:info@ids-imaging.com">info@ids-imaging.com</a><br />
+W: <a href="https://en.ids-imaging.com" target="_blank">https://en.ids-imaging.com</a></p>
+<p>&copy; IDS Imaging Development Systems GmbH, August 2021</p>
+</body>
+</html>
