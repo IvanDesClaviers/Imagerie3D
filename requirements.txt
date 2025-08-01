@@ -1,0 +1,9 @@
+numpy==1.20.1
+opencv-python==4.5.1.48
+matplotlib==3.5.0
+mouse==0.7.1
+enum34==1.1.10
+pyueye==4.90.0.0
+PyAutoGUI==0.9.53
+Rtree==0.9.7
+scipy==1.8.0

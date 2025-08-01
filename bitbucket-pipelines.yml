@@ -1,0 +1,23 @@
+#  Template python-build
+
+#  This template allows you to validate your python code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: python:3.8
+
+pipelines:
+  default:
+      - step:
+          name: Run Tests
+          caches:
+            - pip
+          script:
+            - curl –o /tmp/ids_package.tgz https://en.ids-imaging.com/files/downloads/ids-software-suite/software/linux-desktop/ids-software-suite-linux-4.94-64.tgz
+            - tar -xvf /tmp/ids_package.tgz
+            - /tmp/*.run --auto
+            - export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+            - apt-get update
+            - apt-get install ffmpeg libsm6 libxext6  -y
+            - pip install -r requirements.txt
+            - pip install pytest
+
