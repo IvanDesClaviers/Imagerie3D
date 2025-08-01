@@ -9,8 +9,7 @@ with the software automatically with very little setup and surveillance.
 a Galvos and a rangefinder (laser).
 
 - __A grid orientation finder module:__ its purpose is to find the calibration grid's orientation compared to a perfect
-  perpendicular projection plane (described
-  here: https://mechasys.atlassian.net/wiki/spaces/0E/pages/edit-v2/1154514947)
+  perpendicular projection plane
 
 - __A calibration correction tool:__ its purpose is to help calibrate the galvos by achieving a precision of 0.2 mm on
   the grid
